@@ -35,6 +35,6 @@ func budgetcalc(startingBalance:Double, bills:[String:Double]) {
     }
     print(subtotal)
 }
-func paydateseperation()
-budgetcalc(startingBalance: 1000.00, bills: ["dte":350.00, "rent":200.00])
-
+func paydateseperation() {
+    budgetcalc(startingBalance: 1000.00, bills: ["dte":350.00, "rent":200.00])
+}

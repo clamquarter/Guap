@@ -8,14 +8,19 @@
 import SwiftUI
 
 
+var backgroundColor = Color(red: 0.57, green: 0.87, blue: 0.78)
+
 struct ContentView: View {
     var body: some View {
-        ScrollView {
-            Text(Date(), style: .date)
-            
-            Text("Welcome to Guap.")
-        }
-        .padding()
+        
+        ZStack{
+            backgroundColor
+            VStack {
+                Spacer()
+                LandingScreenView()
+            }
+            .padding(.top, 64)
+        }.ignoresSafeArea()
     }
 }
 
