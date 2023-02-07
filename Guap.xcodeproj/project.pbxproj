@@ -19,6 +19,7 @@
 		13DD74392992D0B700AA51A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		13DD743B2992D0B800AA51A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13DD743E2992D0B800AA51A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1D0F3042992F5B4009AE03E /* guap logic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "guap logic.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 		13DD74462992F12B00AA51A7 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				F1D0F3042992F5B4009AE03E /* guap logic.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
