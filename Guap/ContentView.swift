@@ -7,12 +7,12 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+        ScrollView {
+            Text(Date(), style: .date)
+            
             Text("Welcome to Guap.")
         }
         .padding()
