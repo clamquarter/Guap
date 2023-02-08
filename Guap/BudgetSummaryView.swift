@@ -9,8 +9,13 @@ import SwiftUI
 
 struct BudgetSummaryView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        ZStack{
+            backgroundColor
+            ScrollView {
+                Text(Date(), style: .date)
+                Text("Follow your damn budget.")
+            }
+        }    }
 }
 
 struct BudgetSummaryView_Previews: PreviewProvider {

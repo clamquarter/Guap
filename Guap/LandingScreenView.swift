@@ -10,9 +10,12 @@ import SwiftUI
 
 struct LandingScreenView: View {
     var body: some View {
-        ScrollView {
-            Text(Date(), style: .date)
-            Text("Welcome to Guap.")
+        ZStack{
+            backgroundColor
+            ScrollView {
+                Text(Date(), style: .date)
+                Text("Welcome to Guap.")
+            }
         }
         
     }

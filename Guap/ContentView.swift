@@ -15,12 +15,26 @@ struct ContentView: View {
         
         ZStack{
             backgroundColor
-            VStack {
+//            VStack {
                 Spacer()
-                LandingScreenView()
+                TabView {
+                    LandingScreenView()
+                        .tabItem {
+                            Label("Home", systemImage: "tray.and.arrow.down.fill")
+                        }
+                    BudgetSummaryView()
+                        .tabItem {
+                            Label("Budget", systemImage: "tray.and.arrow.up.fill")
+                        }
+                    GoalSummaryView()
+                        .tabItem {
+                            Label("Goal", systemImage: "person.crop.circle.fill")
+                        }
+//                }
             }
             .padding(.top, 64)
         }.ignoresSafeArea()
+            .font(Font.custom("Do Hyeon", size: 24))
     }
 }
 

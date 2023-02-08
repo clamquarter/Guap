@@ -9,7 +9,13 @@ import SwiftUI
 
 struct GoalSummaryView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            backgroundColor
+            ScrollView {
+                Text(Date(), style: .date)
+                Text("Manage your goals.")
+            }
+        }
     }
 }
 

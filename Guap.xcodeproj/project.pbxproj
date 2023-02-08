@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1378E50929942E780044F6D2 /* DoHyeon-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1378E50729942E780044F6D2 /* DoHyeon-Regular.ttf */; };
 		13DD74382992D0B700AA51A7 /* GuapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD74372992D0B700AA51A7 /* GuapApp.swift */; };
 		13DD743A2992D0B700AA51A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD74392992D0B700AA51A7 /* ContentView.swift */; };
 		13DD743C2992D0B800AA51A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DD743B2992D0B800AA51A7 /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1378E50429942E580044F6D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1378E50729942E780044F6D2 /* DoHyeon-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DoHyeon-Regular.ttf"; sourceTree = "<group>"; };
 		13DD74342992D0B700AA51A7 /* Guap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DD74372992D0B700AA51A7 /* GuapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuapApp.swift; sourceTree = "<group>"; };
 		13DD74392992D0B700AA51A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1378E50529942E620044F6D2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1378E50729942E780044F6D2 /* DoHyeon-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		13DD742B2992D0B700AA51A7 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +69,8 @@
 		13DD74362992D0B700AA51A7 /* Guap */ = {
 			isa = PBXGroup;
 			children = (
+				1378E50529942E620044F6D2 /* Fonts */,
+				1378E50429942E580044F6D2 /* Info.plist */,
 				13DD74462992F12B00AA51A7 /* Playgrounds */,
 				13DD74372992D0B700AA51A7 /* GuapApp.swift */,
 				13DD744F2992FF7400AA51A7 /* BudgetSummaryView.swift */,
@@ -154,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13DD743F2992D0B800AA51A7 /* Preview Assets.xcassets in Resources */,
+				1378E50929942E780044F6D2 /* DoHyeon-Regular.ttf in Resources */,
 				13DD743C2992D0B800AA51A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +315,7 @@
 				DEVELOPMENT_TEAM = 2YSG5A4G9S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Guap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -329,6 +344,7 @@
 				DEVELOPMENT_TEAM = 2YSG5A4G9S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Guap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
