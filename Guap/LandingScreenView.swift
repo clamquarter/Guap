@@ -18,7 +18,7 @@ struct LandingScreenView: View {
                 Text(Date(), style: .date)
                 Text("Next Payday")
                 
-                Text(paySchedule(payCycle:.weekly))
+ //               Text(paySchedule(payCycle:.weekly))
                 DatePicker ("When's your next payday?", selection: $date, displayedComponents: [.date])
             }
         }

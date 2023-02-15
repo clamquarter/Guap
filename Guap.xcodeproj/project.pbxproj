@@ -15,6 +15,7 @@
 		13DD74482992F93500AA51A7 /* LandingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD74472992F93500AA51A7 /* LandingScreenView.swift */; };
 		13DD744E2992FF6200AA51A7 /* GoalSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD744D2992FF6200AA51A7 /* GoalSummaryView.swift */; };
 		13DD74502992FF7400AA51A7 /* BudgetSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD744F2992FF7400AA51A7 /* BudgetSummaryView.swift */; };
+		F1036C50299D7E77006A467C /* plaidAPI in Resources */ = {isa = PBXBuildFile; fileRef = F1036C4F299D7E6C006A467C /* plaidAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		13DD74472992F93500AA51A7 /* LandingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreenView.swift; sourceTree = "<group>"; };
 		13DD744D2992FF6200AA51A7 /* GoalSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSummaryView.swift; sourceTree = "<group>"; };
 		13DD744F2992FF7400AA51A7 /* BudgetSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSummaryView.swift; sourceTree = "<group>"; };
+		F1036C4F299D7E6C006A467C /* plaidAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = plaidAPI; sourceTree = "<group>"; };
 		F1D0F3042992F5B4009AE03E /* guap logic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "guap logic.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 		13DD74362992D0B700AA51A7 /* Guap */ = {
 			isa = PBXGroup;
 			children = (
+				F1036C4F299D7E6C006A467C /* plaidAPI */,
 				1378E50529942E620044F6D2 /* Fonts */,
 				1378E50429942E580044F6D2 /* Info.plist */,
 				13DD74462992F12B00AA51A7 /* Playgrounds */,
@@ -166,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1036C50299D7E77006A467C /* plaidAPI in Resources */,
 				13DD743F2992D0B800AA51A7 /* Preview Assets.xcassets in Resources */,
 				1378E50929942E780044F6D2 /* DoHyeon-Regular.ttf in Resources */,
 				13DD743C2992D0B800AA51A7 /* Assets.xcassets in Resources */,
