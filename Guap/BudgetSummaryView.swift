@@ -8,48 +8,72 @@
 import SwiftUI
 
 //dummy data
-var bills = [bill(billName: "Mortgage", billAmount: 1245), bill(billName: "DTE", billAmount: 180), bill(billName: "Spectrum", billAmount: 49.99), bill(billName: "T-Mobile", billAmount: 35), bill(billName: "Savings", billAmount: 100)]
-var salary: Double = 2500
-struct bill: Identifiable {
-   var billName : String
-    var billAmount : Double
-    var duedate : Date?
+
+
+var startingBal: Double = 2500
+
+struct Bill: Identifiable {
+    let name: String
+    var amount: Double
     var id = UUID()
+    var dueDate : Date?
 }
 
-func budgetcalc(startingBalance:Double, bills:[bill]) -> Double{
-    var subtotal = startingBalance
-    for bill in bills{
-        subtotal -= bill.billAmount
+var bills = [Bill(name: "Rent", amount: 1100), Bill(name: "DTE", amount: 250), Bill(name: "Netflix", amount: 20.99), Bill(name: "T-Mobile", amount: 60), Bill(name: "Car Note", amount: 250.78), Bill(name: "Insurance", amount: 125.50)]
+
+func budgetBal(startingBal: Double, bills: [Bill]) -> Double {
+    subtotal = startingBal
+    for bill in bills {
+        subtotal -= bill.amount
     }
     return subtotal
 }
-//
+
+
+func calcSubtotal(billAmt: Double) -> Double {
+    startingBal -= billAmt
+    return startingBal
+}
+
+var subtotal: Double = 2500
+
 
 struct BudgetSummaryView: View {
+    @State var salary: Double = 2500
+    
+    func billBuilder(_ bill: Bill) -> some View {
+        startingBal -= bill.amount / 2
+        
+        return VStack {
+            HStack{
+                Text("\(bill.name)")
+                Spacer()
+                Text("\(bill.amount.formatted(.currency(code: "USD")))").foregroundColor(.red)
+            }
+            Spacer()
+            HStack{
+                Spacer()
+                Text("\(startingBal.formatted(.currency(code: "USD")))")
+            }
+        }
+    }
+    
     var body: some View {
         ZStack{
             backgroundColor
             VStack {
                 Text(Date(), style: .date)
-                Text("Follow your damn budget.")
-                Text("Income: $2600")
+                Spacer()
+                
+                Text("Deposit: \(salary.formatted(.currency(code: "USD")))")
                 NavigationView {
                     List(bills) {
                         bill in
-                        HStack{
-                            Text("\(bill.billName)")
-                            Spacer()
-                            Text("$\(bill.billAmount.formatted())")
-                        }
+                        billBuilder(bill)
                     }.navigationTitle("Incoming Bills")
-                        .listStyle(.plain)
-                        .background(backgroundColor)
+                    
                 }
-                Text("Ending Balance: $\(budgetcalc(startingBalance:salary, bills: bills).formatted())")
-
-
-                
+                Text("\(budgetBal(startingBal: startingBal, bills: bills).formatted(.currency(code: "USD")))")
             }
         }    }
 }

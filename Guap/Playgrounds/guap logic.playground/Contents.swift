@@ -36,3 +36,4 @@ func budgetcalc(startingBalance:Double, bills:[bill]) {
 //}
 
 var bills = [bill(billName: "Mortgage", billAmount: 1245), bill(billName: "DTE", billAmount: 180), bill(billName: "Spectrum", billAmount: 49.99), bill(billName: "T-Mobile", billAmount: 35), bill(billName: "Savings", billAmount: 100)]
+
