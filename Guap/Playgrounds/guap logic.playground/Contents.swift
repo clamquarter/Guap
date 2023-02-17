@@ -5,7 +5,6 @@ var startingBalance : Double
 var billAmount : Double
 var finalBudgetTotal : Double
 var subtotal : Double
-var bills : [String:Double]
 var paydate : Date
 
 struct paydategenorator{
@@ -24,17 +23,16 @@ struct profile {
 struct bill {
    var billName : String
     var billAmount : Double
-    var duedate : Date
+    var duedate : Date?
 }
-func budgetcalc(startingBalance:Double, bills:[String:Double]) {
+func budgetcalc(startingBalance:Double, bills:[bill]) {
     var subtotal = startingBalance
     for bill in bills{
-        subtotal -= bill.value
-        print("\(bill.key): \(bill.value)")
-        
+        subtotal -= bill.billAmount        
     }
-    print(subtotal)
 }
-func paydateseperation() {
-    budgetcalc(startingBalance: 1000.00, bills: ["dte":350.00, "rent":200.00])
-}
+//func paydateseperation() {
+//    budgetcalc(startingBalance: 1000.00, bills: [bill(billName: "dte", billAmount: 200)])
+//}
+
+var bills = [bill(billName: "Mortgage", billAmount: 1245), bill(billName: "DTE", billAmount: 180), bill(billName: "Spectrum", billAmount: 49.99), bill(billName: "T-Mobile", billAmount: 35), bill(billName: "Savings", billAmount: 100)]

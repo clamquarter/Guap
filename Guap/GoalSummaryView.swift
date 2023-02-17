@@ -14,6 +14,14 @@ struct GoalSummaryView: View {
             ScrollView {
                 Text(Date(), style: .date)
                 Text("Manage your goals.")
+                Image("starGoalProgress")
+                Spacer()
+                Spacer()
+                Spacer()
+                ProgressView(value: 0.46)
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
+                Text("$550 / $1,200 Saved")
+                
             }
         }
     }

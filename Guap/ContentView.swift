@@ -16,6 +16,7 @@ struct ContentView: View {
         ZStack{
             backgroundColor
 //            VStack {
+            //USE DUMMY DATA FOR GOAL SCREEN
                 Spacer()
                 TabView {
                     LandingScreenView()
