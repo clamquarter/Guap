@@ -15,6 +15,9 @@
 		13DD74482992F93500AA51A7 /* LandingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD74472992F93500AA51A7 /* LandingScreenView.swift */; };
 		13DD744E2992FF6200AA51A7 /* GoalSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD744D2992FF6200AA51A7 /* GoalSummaryView.swift */; };
 		13DD74502992FF7400AA51A7 /* BudgetSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD744F2992FF7400AA51A7 /* BudgetSummaryView.swift */; };
+		6CEDE4DA29A2FD0F00A48798 /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDE4D929A2FD0F00A48798 /* RingShape.swift */; };
+		6CEDE4DC29A2FD4900A48798 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDE4DB29A2FD4900A48798 /* Ring.swift */; };
+		6CEDE4DE29A2FEEF00A48798 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDE4DD29A2FEEF00A48798 /* RingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		13DD74472992F93500AA51A7 /* LandingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreenView.swift; sourceTree = "<group>"; };
 		13DD744D2992FF6200AA51A7 /* GoalSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSummaryView.swift; sourceTree = "<group>"; };
 		13DD744F2992FF7400AA51A7 /* BudgetSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSummaryView.swift; sourceTree = "<group>"; };
+		6CEDE4D929A2FD0F00A48798 /* RingShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
+		6CEDE4DB29A2FD4900A48798 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		6CEDE4DD29A2FEEF00A48798 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		F1D0F3042992F5B4009AE03E /* guap logic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "guap logic.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -77,6 +83,9 @@
 				13DD74392992D0B700AA51A7 /* ContentView.swift */,
 				13DD744D2992FF6200AA51A7 /* GoalSummaryView.swift */,
 				13DD74472992F93500AA51A7 /* LandingScreenView.swift */,
+				6CEDE4D929A2FD0F00A48798 /* RingShape.swift */,
+				6CEDE4DB29A2FD4900A48798 /* Ring.swift */,
+				6CEDE4DD29A2FEEF00A48798 /* RingView.swift */,
 				13DD743B2992D0B800AA51A7 /* Assets.xcassets */,
 				13DD743D2992D0B800AA51A7 /* Preview Content */,
 			);
@@ -180,7 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				13DD744E2992FF6200AA51A7 /* GoalSummaryView.swift in Sources */,
+				6CEDE4DA29A2FD0F00A48798 /* RingShape.swift in Sources */,
+				6CEDE4DC29A2FD4900A48798 /* Ring.swift in Sources */,
 				13DD743A2992D0B700AA51A7 /* ContentView.swift in Sources */,
+				6CEDE4DE29A2FEEF00A48798 /* RingView.swift in Sources */,
 				13DD74502992FF7400AA51A7 /* BudgetSummaryView.swift in Sources */,
 				13DD74382992D0B700AA51A7 /* GuapApp.swift in Sources */,
 				13DD74482992F93500AA51A7 /* LandingScreenView.swift in Sources */,
