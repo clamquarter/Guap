@@ -15,7 +15,7 @@ struct RingView: View {
     var body: some View {
         ZStack {
             Ring(lineWidth: 30,
-                 backgroundColor: Color(red: 0.989, green: 0.17, blue: 0.331),
+                 backgroundColor: Color(red: 0.989, green: 0.17, blue: 0.331, opacity: 0.343),
                  foregroundColor: Color(red: 0.998, green: 0.174, blue: 0.335),
                  percentage: percentage1
             )
@@ -24,7 +24,7 @@ struct RingView: View {
                 self.percentage1 = 20
             }
             Ring(lineWidth: 40,
-                 backgroundColor: Color(red: 0.471, green: 1.0, blue: 0.265),
+                 backgroundColor: Color(red: 0.471, green: 1.0, blue: 0.265, opacity: 0.337),
                  foregroundColor: Color(red: 0.471, green: 1.0, blue: 0.265).opacity(0.2),
                  percentage: percentage2
             )
@@ -33,7 +33,7 @@ struct RingView: View {
                 self.percentage2 = 50
             }
             Ring(lineWidth: 40,
-                 backgroundColor: Color(red: 0.537, green: 0.268, blue: 0.668).opacity(0.2),
+                 backgroundColor: Color(red: 0.537, green: 0.268, blue: 0.668, opacity: 0.363),
                  foregroundColor: Color(red: 0.537, green: 0.268, blue: 0.668),
                  percentage: percentage3
             )
