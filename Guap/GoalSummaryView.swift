@@ -12,15 +12,15 @@ struct GoalSummaryView: View {
         ZStack{
             backgroundColor
             ScrollView {
-                Text(Date(), style: .date)
-                Text("Manage your goals.")
+                Spacer()
+                Text("Miami Trip Fund").foregroundColor(Color(red: 0.537, green: 0.264, blue: 0.668)).font(Font.custom("Do Hyeon", size: 36)).shadow(color: .purple, radius: 10).padding(.top, 18)
                 Image("starGoalProgress")
                 Spacer()
                 Spacer()
                 Spacer()
                 ProgressView(value: 0.46)
                     .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
-                Text("$550 / $1,200 Saved")
+                Text("$1,500 / $3,000 Saved")
                 
             }
         }
