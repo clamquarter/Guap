@@ -5,7 +5,7 @@
 Guap is a goal-oriented budget app geared towards gen Z. Users input their goal and link their bank account via Plaid, then Guap will determine how much time
 it will take them to reach their goal.
 
-<h2>What I learnedy</h2>
+<h2>What I Learned</h2>
 <ul>
 <li>How to pull data from APIs</li>
 <li>App icon design!</li>
